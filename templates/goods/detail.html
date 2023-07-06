@@ -1,0 +1,98 @@
+{% extends 'base_templates/base.html' %}
+{% load static %}
+
+{% block title %}天天生鲜-商品详情{% endblock title %}
+
+{% block topfiles %}
+    <script type="text/javascript" src={% static "static/js/jquery-1.12.4.min.js" %}></script>
+	<script type="text/javascript" src={% static "static/js/jquery-ui.min.js" %}></script>
+    <script type="text/javascript" src={% static "static/js/slide.js" %}></script>
+{% endblock topfiles %}
+
+{% block body %}
+    <div class="navbar_con">
+        <div class="navbar">
+            <h1 class="fl">全部商品分类</h1>
+            <ul class="navlist fl">
+                <li><a href="{% url 'goods:index' %}">首页</a></li>
+                <li class="interval">|</li>
+                <li><a href="#">手机生鲜</a></li>
+                <li class="interval">|</li>
+                <li><a href="#">抽奖</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="goods_detail_con clearfix">
+		<div class="goods_detail_pic fl"><img width="320px" height="320px" src="{{ goods.image.url }}"></div>
+
+		<div class="goods_detail_list fr">
+			<h3>{{ goods.name }}</h3>
+			<p>{{ goods.desc }}</p>
+			<div class="prize_bar">
+				<span class="show_pirze">¥<em>{{ goods.price }}</em></span>
+				<span class="show_unit">单  位：{{ goods.unite }}</span>
+			</div>
+			<div class="goods_num clearfix">
+				<div class="num_name fl">数 量：</div>
+				<div class="num_add fl">
+					<input type="text" class="num_show fl" value="1">
+					<a href="javascript:;" class="add fr">+</a>
+					<a href="javascript:;" class="minus fr">-</a>	
+				</div>
+			</div>
+			<div>
+				<p>其他规格:</p>
+			</div> 
+			<div class="total">总价：<em>{{ goods.price }}元</em></div>
+			<div class="operate_btn">
+				<a href="javascript:;" class="buy_btn">立即购买</a>
+				<a href="javascript:;" class="add_cart" id="add_cart">加入购物车</a>
+                <span hidden="hidden" id="goods_id">{{ goods.id }}</span>
+			</div>
+		</div>
+	</div>
+	<div class="main_wrap clearfix">
+		<div class="l_wrap fl clearfix">
+			<div class="new_goods">
+				<h3>新品推荐</h3>
+				<ul>
+					{% for new_good in new_products %}
+					<li>
+						<a href="{% url 'goods:detail' new_good.id %}"><img src="{{ new_good.image.url }}"></a>
+						<h4><a href="{% url 'goods:detail' new_good.id %}">{{ new_good.name }}</a></h4>
+						<div class="prize">￥{{ new_good.price }}</div>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+		<div class="r_wrap fr clearfix">
+			<ul class="detail_tab clearfix">
+				<li id="tag_detail" class="active">商品介绍</li>
+				<li id="tag_comment">评论</li>
+			</ul>
+
+			<div class="tab_content" id="tab_detail">
+				<dl>
+					<dt>商品详情：</dt>
+					<dd>{{ goods.goods.detail | safe }} </dd>
+				</dl>
+			</div>
+
+			<div class="tab_content" id="tab_comment" style="display: none">
+				<dl>
+                    {% for order in order_goods %}
+					<dt>评论时间：{{ order.update_time }}&nbsp;&nbsp;用户名:{{ order.order_info.user.username }}</dt>
+                    <dd>评论内容:{{ order.comment }}</dd>
+                    {% endfor %}
+				</dl>
+			</div>
+
+		</div>
+	</div>
+	{% csrf_token %}
+	<div class="add_jump"></div>
+	<script type="text/javascript" src="{% static 'static/js/jquery-1.12.4.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'static/js/detail.js' %}"></script>
+{% endblock body %}

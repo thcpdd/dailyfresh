@@ -1,0 +1,71 @@
+{% extends 'base_templates/base.html' %}
+{% load static %}
+
+{% block title %}天天生鲜-商品列表{% endblock title %}
+
+{% block body %}
+    <div class="navbar_con">
+        <div class="navbar">
+            <h1 class="fl">全部商品分类</h1>
+            <ul class="navlist fl">
+                <li><a href="{% url 'goods:index' %}">首页</a></li>
+                <li class="interval">|</li>
+                <li><a href="#">手机生鲜</a></li>
+                <li class="interval">|</li>
+                <li><a href="#">抽奖</a></li>
+            </ul>
+        </div>
+    </div>
+	<div class="main_wrap clearfix">
+		<div class="l_wrap fl clearfix">
+			<div class="new_goods">
+				<h3>新品推荐</h3>
+				<ul>
+					{% for new_good in new_products %}
+					<li>
+						<a href="{% url 'goods:detail' new_good.id %}"><img alt="{{ new_good.name }}" src="{{ new_good.image.url }}"></a>
+						<h4><a href="{% url 'goods:detail' new_good.id %}">{{ new_good.name }}</a></h4>
+						<div class="prize">￥{{ new_good.price }}</div>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+		<div class="r_wrap fr clearfix">
+            <div class="sort_bar">
+                <a href="{% url 'goods:list' 'default' 1 %}" {% if sort == 'default' %} class="active" {% endif %}>默认</a>
+                <a href="{% url 'goods:list' 'price' 1 %}" {% if sort == 'price' %} class="active" {% endif %}>价格</a>
+                <a href="{% url 'goods:list' 'hot' 1 %}" {% if sort == 'hot' %} class="active" {% endif %}>人气</a>
+            </div>
+			<ul class="goods_type_list clearfix">
+				{% for good in pages.object_list %}
+				<li>
+					<a href="{% url 'goods:detail' good.id %}"><img alt="{{ good.name }}" src="{{ good.image.url }}"></a>
+					<h4><a href="{% url 'goods:detail' good.id %}">{{ good.name }}</a></h4>
+					<div class="operate">
+						<span class="prize">￥{{ good.price }}</span>
+						<span class="unit">{{ good.price }}/{{ good.unite }}</span>
+						<a href="#" class="add_goods" title="加入购物车"></a>
+					</div>
+				</li>
+				{% endfor %}
+			</ul>
+			<div class="pagenation">
+				{% if pages.has_previous %}
+					<a href="{% url 'goods:list' sort pages.previous_page_number %}">上一页</a>
+				{% endif %}
+				{% for page in pages.paginator.page_range %}
+					{% if page == pages.number %}
+					<a href="{% url 'goods:list' sort page %}" class="active">{{ page }}</a>
+					{% else %}
+					<a href="{% url 'goods:list' sort page %}">{{ page }}</a>
+					{% endif %}
+				{% endfor %}
+				{% if pages.has_next %}
+					<a href="{% url 'goods:list' sort pages.next_page_number %}">下一页></a>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+    <script type="text/javascript" rel="{% static 'static/js/cart.js' %}"></script>
+{% endblock body %}

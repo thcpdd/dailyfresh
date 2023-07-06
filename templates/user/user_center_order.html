@@ -1,0 +1,52 @@
+{% extends 'base_templates/base_user_center.html' %}
+{% load static %}
+{% block right_content %}
+    <div class="right_content clearfix">
+        <h3 class="common_title2">全部订单</h3>
+        {% for objects in pages.object_list %}
+            <ul class="order_list_th w978 clearfix">
+                <li class="col01">{{ objects.0.create_time }}</li>
+                <li class="col02">订单号：{{ objects.0.order_info_id }}</li>
+                <li class="col02 stress">{{ objects.0.status }}</li>
+            </ul>
+            <table class="order_list_table w980">
+                {% for object in objects %}
+                    <tbody>
+                    <tr>
+                        <td width="55%">
+                            <ul class="order_goods_list clearfix">
+                                <li class="col01"><img src="{{ object.goods_sku.image.url }}"></li>
+                                <li class="col02">{{ object.goods_sku.name }}<em>{{ object.goods_sku.price }}元/{{ object.goods_sku.unite }}</em>
+                                </li>
+                                <li class="col03">{{ object.count }}</li>
+                                <li class="col04">{{ object.price }}</li>
+                            </ul>
+                        <td width="15%">{{ object.amount }}</td>
+                        <td width="15%">{{ object.status }}</td>
+                        {% if object.status == '待支付' %}
+                            <td width="15%"><a href="#" class="oper_btn">去付款</a></td>
+                        {% else %}
+                            <td width="15%"><a class="oper_btn">{{ object.status }}</a></td>
+                        {% endif %}
+                    </tr>
+                    </tbody>
+                {% endfor %}
+            </table>
+        {% endfor %}
+        <div class="pagenation">
+            {% if pages.has_previous %}
+                <a href="{% url 'user:order' pages.previous_page_number %}">上一页</a>
+            {% endif %}
+            {% for page in pages.paginator.page_range %}
+                {% if pages.number == page %}
+                    <a href="{% url 'user:order' page %}" class="active">{{ page }}</a>
+                {% else %}
+                    <a href="{% url 'user:order' page %}">{{ page }}</a>
+                {% endif %}
+            {% endfor %}
+            {% if pages.has_next %}
+                <a href="{% url 'user:order' pages.next_page_number %}">下一页</a>
+            {% endif %}
+        </div>
+    </div>
+{% endblock right_content %}

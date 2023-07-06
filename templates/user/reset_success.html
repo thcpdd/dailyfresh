@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content=5,{% url 'user:login' %} />
+    <title>天天生鲜-找回密码</title>
+</head>
+<body>
+    <div>
+        <h2>密码已成功找回，请妥善保管好此密码，防止再次被丢失</h2>
+        <p>页面将在5秒后跳转到登录页面……</p>
+        <a href={% url 'user:login' %}><em>（若页面未正常跳转，请点击此处……）</em></a>
+    </div>
+</body>
+</html>
