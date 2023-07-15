@@ -139,9 +139,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.qq.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = '1834763300@qq.com'
-EMAIL_HOST_PASSWORD = 'yfffobochkfmihcd'
-EMAIL_FROM = '天天生鲜-邮箱官方<1834763300@qq.com>'
+EMAIL_HOST_USER = ''  # 你的邮箱号
+EMAIL_HOST_PASSWORD = ''  # 你的邮箱授权码
+EMAIL_FROM = ''  # 发送者信息，默认写邮箱号
 
 # 登陆验证
 AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.AllowAllUsersModelBackend']
