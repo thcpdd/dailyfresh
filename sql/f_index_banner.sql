@@ -1,0 +1,4 @@
+INSERT INTO fresh_everyday.f_index_banner (id, create_time, update_time, is_delete, image, `index`, good_id) VALUES (1, '2023-04-26 13:52:12.873728', '2023-04-26 13:57:53.786875', 0, 'static/static/images/slide.jpg', 1, 1);
+INSERT INTO fresh_everyday.f_index_banner (id, create_time, update_time, is_delete, image, `index`, good_id) VALUES (2, '2023-04-26 14:00:33.087580', '2023-04-26 14:00:33.087580', 0, 'static/static/images/slide04.jpg', 2, 2);
+INSERT INTO fresh_everyday.f_index_banner (id, create_time, update_time, is_delete, image, `index`, good_id) VALUES (3, '2023-04-26 14:14:15.437236', '2023-04-26 14:14:15.437236', 0, 'static/static/images/slide02.jpg', 3, 3);
+INSERT INTO fresh_everyday.f_index_banner (id, create_time, update_time, is_delete, image, `index`, good_id) VALUES (4, '2023-04-26 14:17:43.037092', '2023-04-26 14:17:43.037092', 0, 'static/static/images/slide03.jpg', 4, 4);

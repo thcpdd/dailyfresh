@@ -1,0 +1,2 @@
+INSERT INTO fresh_everyday.f_index_promotion (id, create_time, update_time, is_delete, name, url, image, `index`) VALUES (1, '2023-06-06 07:31:24.225000', '2023-06-06 07:31:24.226751', 0, '吃货暑假', '#', 'static/static/images/adv01.jpg', 1);
+INSERT INTO fresh_everyday.f_index_promotion (id, create_time, update_time, is_delete, name, url, image, `index`) VALUES (2, '2023-06-06 19:49:24.000000', '2023-06-06 19:49:26.000000', 0, '0元抢', '#', 'static/static/images/adv02.jpg', 2);
