@@ -16,7 +16,7 @@
 2. 一个商品从加入购物车到提交订单的具体业务流程。
 3. 配合`Redis`来作为数据库的缓存层，降低主数据库的查询压力。
 
-对于这个项目，它只是一个拿来当作是学习的项目。为此，在这之后我做了一个大胆的决定：要独立完成一个完整的Django项目，可以参考：<a href="https://gitee.com/kill-my-teammates-first/home_appliances">https://gitee.com/kill-my-teammates-first/home_appliances。</a>
+对于这个项目，它只是一个拿来当作是学习的项目。为此，在这之后我做了一个大胆的决定：要独立完成一个完整的Django项目，可以参考：<a href="https://gitee.com/kill-my-teammates-first/home_appliances">https://gitee.com/kill-my-teammates-first/home_appliances</a>。
 
 ### 项目展示
 
