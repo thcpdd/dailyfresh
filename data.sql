@@ -1,3 +1,55 @@
+INSERT INTO fresh_everyday.f_goods_type (id, create_time, update_time, is_delete, name, logo, image) VALUES (1, '2023-04-26 06:52:37.717251', '2023-04-26 06:52:37.717251', 0, '时令水果', 'fruit', 'static/static/images/banner01.jpg');
+INSERT INTO fresh_everyday.f_goods_type (id, create_time, update_time, is_delete, name, logo, image) VALUES (2, '2023-04-26 06:56:22.209088', '2023-04-26 06:56:22.209088', 0, '海鲜水产', 'seafood', 'static/static/images/banner02.jpg');
+INSERT INTO fresh_everyday.f_goods_type (id, create_time, update_time, is_delete, name, logo, image) VALUES (3, '2023-04-26 06:56:42.242805', '2023-04-26 06:56:42.242805', 0, '猪牛羊肉', 'meet', 'static/static/images/banner03.jpg');
+INSERT INTO fresh_everyday.f_goods_type (id, create_time, update_time, is_delete, name, logo, image) VALUES (4, '2023-04-26 06:56:54.433899', '2023-04-26 06:56:54.433899', 0, '禽类蛋品', 'egg', 'static/static/images/banner04.jpg');
+INSERT INTO fresh_everyday.f_goods_type (id, create_time, update_time, is_delete, name, logo, image) VALUES (5, '2023-04-26 06:57:15.100228', '2023-04-26 06:57:15.100228', 0, '新鲜蔬菜', 'vegetables', 'static/static/images/banner05.jpg');
+INSERT INTO fresh_everyday.f_goods_type (id, create_time, update_time, is_delete, name, logo, image) VALUES (6, '2023-04-26 06:57:31.019619', '2023-04-26 06:57:31.019619', 0, '速冻食品', 'ice', 'static/static/images/banner06.jpg');
+
+
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (1, '2023-04-26 13:50:52.691754', '2023-04-26 13:50:52.691754', 0, '新鲜水果轮播图', '首页轮播图信息');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (2, '2023-04-26 13:59:29.395538', '2023-04-26 13:59:29.395538', 0, '海鲜水产', '海鲜水产轮播图信息');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (3, '2023-04-26 14:13:32.793342', '2023-04-26 14:13:32.793342', 0, '时令水果轮播图', '时令水果轮播图信息');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (4, '2023-04-26 14:17:17.419349', '2023-04-26 14:17:17.419349', 0, '猪牛羊肉轮播图', '猪牛羊肉轮播图信息');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (5, '2023-07-01 10:49:05.000000', '2023-07-01 10:49:06.000000', 0, '草莓', '新鲜的草莓');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (6, '2023-07-01 10:51:12.000000', '2023-07-01 10:51:13.000000', 0, '柠檬', '新鲜的柠檬');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (7, '2023-07-01 10:51:52.000000', '2023-07-01 10:51:53.000000', 0, '葡萄', '新鲜的葡萄');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (8, '2023-07-01 10:53:58.000000', '2023-07-01 10:53:58.000000', 0, '黄桃', '新鲜的黄桃');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (9, '2023-07-01 10:54:20.000000', '2023-07-01 10:54:21.000000', 0, '杏子', '新鲜的杏子');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (10, '2023-07-01 10:55:52.000000', '2023-07-01 10:55:53.000000', 0, '李子', '新鲜的李子');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (11, '2023-07-01 10:58:33.000000', '2023-07-01 10:58:34.000000', 0, '香梨', '新鲜的香梨');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (12, '2023-07-01 10:59:48.000000', '2023-07-01 10:59:49.000000', 0, '酸浆', '新鲜的酸浆');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (13, '2023-07-01 11:00:14.000000', '2023-07-01 11:00:15.000000', 0, '香蕉', '新鲜的香蕉');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (14, '2023-07-01 11:00:32.000000', '2023-07-01 11:00:33.000000', 0, '大青枣', '新鲜的青枣');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (15, '2023-07-01 11:01:52.000000', '2023-07-01 11:01:52.000000', 0, '红桑葚', '新鲜的红桑葚');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (16, '2023-07-01 11:02:13.000000', '2023-07-01 11:02:14.000000', 0, '猕猴桃', '新鲜的猕猴桃');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (17, '2023-07-01 11:02:34.000000', '2023-07-01 11:02:34.000000', 0, '砂糖桔', '新鲜的砂糖桔');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (18, '2023-07-01 11:03:00.000000', '2023-07-01 11:03:01.000000', 0, '橙子', '新鲜的橙子');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (19, '2023-07-01 11:03:26.000000', '2023-07-01 11:03:26.000000', 0, '椰子', '海南椰子');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (20, '2023-07-01 11:04:30.000000', '2023-07-01 11:04:31.000000', 0, '樱桃', '新鲜的樱桃');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (21, '2023-07-01 13:06:56.000000', '2023-07-01 13:06:56.000000', 0, '青虾', '青岛大青虾');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (22, '2023-07-01 13:08:21.000000', '2023-07-01 13:08:21.000000', 0, '扇贝', '大扇贝');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (23, '2023-07-01 13:08:34.000000', '2023-07-01 13:08:35.000000', 0, '秋刀鱼', '新鲜秋刀鱼');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (24, '2023-07-01 13:08:55.000000', '2023-07-01 13:08:55.000000', 0, '基围虾', '基围虾');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (25, '2023-07-01 13:23:39.000000', '2023-07-01 13:23:39.000000', 0, '猪肉', '新鲜猪肉');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (26, '2023-07-01 13:25:33.000000', '2023-07-01 13:25:33.000000', 0, '羊肉', '新鲜羊肉');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (27, '2023-07-01 13:26:23.000000', '2023-07-01 13:26:23.000000', 0, '鸡肉', '纯正鸡肉');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (28, '2023-07-01 13:27:18.000000', '2023-07-01 13:27:19.000000', 0, '牛肉', '新鲜牛肉');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (29, '2023-07-01 13:42:19.000000', '2023-07-01 13:42:20.000000', 0, '鸡蛋', '鸡蛋');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (30, '2023-07-01 13:42:35.000000', '2023-07-01 13:42:36.000000', 0, '鸭蛋', '鸭蛋');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (31, '2023-07-01 13:42:45.000000', '2023-07-01 13:42:46.000000', 0, '鹅蛋', '鹅蛋');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (32, '2023-07-01 13:43:00.000000', '2023-07-01 13:43:01.000000', 0, '鹌鹑蛋', '鹌鹑蛋');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (33, '2023-07-01 13:53:15.000000', '2023-07-01 13:53:15.000000', 0, '白菜', '白菜');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (34, '2023-07-01 13:54:25.000000', '2023-07-01 13:54:25.000000', 0, '芹菜', '芹菜');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (35, '2023-07-01 13:54:50.000000', '2023-07-01 13:54:50.000000', 0, '冬瓜', '冬瓜');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (36, '2023-07-01 13:55:32.000000', '2023-07-01 13:55:33.000000', 0, '西兰花', '西兰花');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (37, '2023-07-01 13:58:01.000000', '2023-07-01 13:58:02.000000', 0, '芒果', '芒果');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (38, '2023-07-01 14:05:02.000000', '2023-07-01 14:05:03.000000', 0, '辣椒', '辣椒');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (39, '2023-07-01 14:09:15.000000', '2023-07-01 14:09:16.000000', 0, '鱼丸', '鱼丸');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (40, '2023-07-01 14:09:31.000000', '2023-07-01 14:09:32.000000', 0, '蟹棒', '蟹棒');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (41, '2023-07-01 14:09:50.000000', '2023-07-01 14:09:51.000000', 0, '虾丸', '虾丸');
+INSERT INTO fresh_everyday.f_goods_spu (id, create_time, update_time, is_delete, name, detail) VALUES (42, '2023-07-01 14:10:19.000000', '2023-07-01 14:10:19.000000', 0, '饺子', '饺子');
+
+
 INSERT INTO fresh_everyday.f_goods_sku (id, create_time, update_time, is_delete, name, `desc`, price, unite, image, stock, sales, state, goods_id, type_id) VALUES (1, '2023-04-26 13:52:07.451345', '2023-04-26 13:52:07.451345', 1, '新鲜水果轮播图', '暂无', 12.00, 'Kg', 'static/static/images/slide.jpg', 0, 0, 1, 1, 1);
 INSERT INTO fresh_everyday.f_goods_sku (id, create_time, update_time, is_delete, name, `desc`, price, unite, image, stock, sales, state, goods_id, type_id) VALUES (2, '2023-04-26 14:00:27.959316', '2023-04-26 14:00:27.959316', 1, '海鲜水产轮播图', '暂无', 45.00, 'Kg', 'static/static/images/slide04.jpg', 0, 0, 1, 2, 2);
 INSERT INTO fresh_everyday.f_goods_sku (id, create_time, update_time, is_delete, name, `desc`, price, unite, image, stock, sales, state, goods_id, type_id) VALUES (3, '2023-04-26 14:14:06.980041', '2023-04-26 14:14:06.980041', 1, '时令水果轮播图', '暂无', 0.00, 'Kg', 'static/static/images/slide02.jpg', 0, 0, 1, 3, 1);
@@ -44,3 +96,12 @@ INSERT INTO fresh_everyday.f_goods_sku (id, create_time, update_time, is_delete,
 INSERT INTO fresh_everyday.f_goods_sku (id, create_time, update_time, is_delete, name, `desc`, price, unite, image, stock, sales, state, goods_id, type_id) VALUES (45, '2023-07-01 14:11:39.000000', '2023-07-03 15:18:07.193151', 0, '蟹棒', '暂无', 68.00, 'Kg', 'static/static/images/goods/goods035.jpg', 172, 154, 1, 40, 6);
 INSERT INTO fresh_everyday.f_goods_sku (id, create_time, update_time, is_delete, name, `desc`, price, unite, image, stock, sales, state, goods_id, type_id) VALUES (46, '2023-07-01 14:12:43.000000', '2023-07-01 14:12:44.000000', 0, '虾丸', '暂无', 38.00, 'Kg', 'static/static/images/goods/goods036.jpg', 90, 2, 1, 41, 6);
 INSERT INTO fresh_everyday.f_goods_sku (id, create_time, update_time, is_delete, name, `desc`, price, unite, image, stock, sales, state, goods_id, type_id) VALUES (47, '2023-07-01 14:13:35.000000', '2023-07-01 14:13:36.000000', 0, '猪肉玉米饺', '暂无', 20.00, 'Kg', 'static/static/images/goods/goods037.jpg', 11, 122, 1, 42, 6);
+
+INSERT INTO fresh_everyday.f_index_banner (id, create_time, update_time, is_delete, image, `index`, good_id) VALUES (1, '2023-04-26 13:52:12.873728', '2023-04-26 13:57:53.786875', 0, 'static/static/images/slide.jpg', 1, 1);
+INSERT INTO fresh_everyday.f_index_banner (id, create_time, update_time, is_delete, image, `index`, good_id) VALUES (2, '2023-04-26 14:00:33.087580', '2023-04-26 14:00:33.087580', 0, 'static/static/images/slide04.jpg', 2, 2);
+INSERT INTO fresh_everyday.f_index_banner (id, create_time, update_time, is_delete, image, `index`, good_id) VALUES (3, '2023-04-26 14:14:15.437236', '2023-04-26 14:14:15.437236', 0, 'static/static/images/slide02.jpg', 3, 3);
+INSERT INTO fresh_everyday.f_index_banner (id, create_time, update_time, is_delete, image, `index`, good_id) VALUES (4, '2023-04-26 14:17:43.037092', '2023-04-26 14:17:43.037092', 0, 'static/static/images/slide03.jpg', 4, 4);
+
+INSERT INTO fresh_everyday.f_index_promotion (id, create_time, update_time, is_delete, name, url, image, `index`) VALUES (1, '2023-06-06 07:31:24.225000', '2023-06-06 07:31:24.226751', 0, '吃货暑假', '#', 'static/static/images/adv01.jpg', 1);
+INSERT INTO fresh_everyday.f_index_promotion (id, create_time, update_time, is_delete, name, url, image, `index`) VALUES (2, '2023-06-06 19:49:24.000000', '2023-06-06 19:49:26.000000', 0, '0元抢', '#', 'static/static/images/adv02.jpg', 2);
+
