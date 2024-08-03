@@ -1,6 +1,6 @@
 # 天天生鲜
 
-### 介绍
+## 介绍
 
 我的第二个用来练手的Django项目。
 
@@ -8,7 +8,7 @@
 
 项目完成时间：2023年7月3日
 
-### 项目收获
+## 项目收获
 
 虽然这个项目是第二个练手的项目，但是这时候我还是没有完全形成一些业务逻辑思维，绝大多数东西还是需要参考教程去实现，不过也还是有些许收获。
 
@@ -18,7 +18,7 @@
 
 对于这个项目，它只是一个拿来当作是学习的项目。为此，在这之后我做了一个大胆的决定：要独立完成一个完整的Django项目，可以参考：<a href="https://gitee.com/kill-my-teammates-first/home_appliances">https://gitee.com/kill-my-teammates-first/home_appliances</a>。
 
-### 项目展示
+## 项目展示
 
 ![](md-image/%E9%A6%96%E9%A1%B51.png)
 
