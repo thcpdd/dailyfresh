@@ -4,7 +4,7 @@
 
 我的第二个用来练手的Django项目。
 
-访问地址：<a href="http://dailyfresh.rainbow.hi.cn">http://dailyfresh.rainbow.hi.cn</a>
+访问地址：<a href="https://dailyfresh.thcpdd.com">https://dailyfresh.thcpdd.com</a>
 
 项目完成时间：2023年7月3日
 
